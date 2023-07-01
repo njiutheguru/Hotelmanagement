@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ctime>
+#include <conio.h>
 
 using namespace std;
 
@@ -313,6 +313,7 @@ switch(choice)
 
 
 
-
+        getch();
     return 0;
+    
 }
