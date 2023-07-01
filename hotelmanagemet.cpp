@@ -2,6 +2,15 @@
 #include <conio.h>
 
 using namespace std;
+void inputerrors()
+{
+     if(cin.fail())
+    {
+        cout<<"\nPlease Enter Integer Values only." << endl;
+        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
+        exit(1);
+    }
+}
 
 int main()
 {
@@ -21,52 +30,22 @@ int main()
     //fflush(stdin);
      cout <<"\n Enter the quantity of Rooms: " ;
      cin>>quantity_of_rooms;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+        inputerrors();
      cout <<"\n Enter the quantity of Pasta: " ;
      cin>>quantity_of_pasta;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
      cout <<"\n Enter the quantity of Burgers: " ;
      cin>>quantity_of_burgers;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
      cout <<"\n Enter the quantity of Noodles: " ;
      cin>>quantity_of_noodles;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
      cout <<"\n Enter the quantity of Chickens Roll: " ;
      cin>>quantity_of_chicken;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
      cout <<"\n Enter the quantity of Milkshake: " ;
      cin>>quantity_of_qshake;
-     if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+   inputerrors();
 
      cout<<"\n";
 do
@@ -90,12 +69,7 @@ do
 
     cin >> choice;
 
-    if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+    inputerrors();
 //  cout<<"program executed successfully \n ";
 
 
@@ -104,12 +78,7 @@ switch(choice)
     case 1:
         cout <<"\n \n \t Enter the number of rooms you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
         if(quantity_of_rooms-sold_rooms>=quantity)
         {
             sold_rooms=sold_rooms+quantity;
@@ -132,12 +101,7 @@ switch(choice)
 
             cout <<"\n \n \t Enter the number of Pasta you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+   inputerrors();
         if(quantity_of_pasta-sold_pasta>=quantity)
         {
             sold_pasta=sold_pasta+quantity;
@@ -156,12 +120,7 @@ switch(choice)
 
             cout <<"\n \n \t Enter the number of Burgers you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
 
         if(quantity_of_burgers-sold_burgers>=quantity)
         {
@@ -181,12 +140,7 @@ switch(choice)
 
             cout <<"\n \n \t Enter the number of Noodles you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+     inputerrors();
         if(quantity_of_noodles-sold_noodles>=quantity)
         {
             sold_noodles=sold_noodles+quantity;
@@ -204,12 +158,7 @@ switch(choice)
     case 5:
             cout <<"\n \n \t Enter the number of MilkShakes you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+    inputerrors();
         if(quantity_of_qshake-sold_qshake>=quantity)
         {
             sold_qshake=sold_qshake+quantity;
@@ -227,12 +176,7 @@ switch(choice)
     case 6:
             cout <<"\n \n \t Enter the number of Chickens you want: ";
         cin>>quantity;
-        if(cin.fail())
-    {
-        cout<<"\nPlease Enter Integer Values only." << endl;
-        cout<<" Porgram Ended unsuccessful, Please try again." << endl;
-        exit(1);
-    }
+    inputerrors();
         if(quantity_of_chicken-sold_chicken>=quantity)
         {
             sold_chicken=sold_chicken+quantity;
